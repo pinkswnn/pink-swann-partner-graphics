@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pink Swann | Christmas Crown Partner Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: radial-gradient(circle at top, #1b0730, #05020a 60%, #000 100%);
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, #FF00A2, #E4C17B);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    h2 {
+      font-size: 1.2rem;
+      text-align: center;
+      color: #ffdc8a;
+      margin-bottom: 40px;
+      font-weight: 400;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 20px;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 20px rgba(255, 0, 162, 0.15);
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 0 30px rgba(255, 0, 162, 0.35);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 14px;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      margin-bottom: 6px;
+      color: #E4C17B;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 12px;
+    }
+
+    .card a {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 30px;
+      background: linear-gradient(90deg, #FF00A2, #E4C17B);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+    }
+
+    .card a:hover {
+      opacity: 0.85;
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.6);
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <h1>🎄 Christmas Crown Partner Gallery</h1>
+  <h2>Each partner is helping crown 15–25 queens this December 👑</h2>
+
+  <div class="grid">
+    <!-- CARD EXAMPLE 1 -->
+    <div class="card">
+      <img src="unikorn-logo.png" alt="Unikorn Xpressions Logo">
+      <h3>Unikorn Xpressions</h3>
+      <p>Founding Partner | Luxury Wig Design</p>
+      <a href="christmas-crown-partner.html" target="_blank">View Partner Post</a>
+    </div>
+
+    <!-- CARD EXAMPLE 2 -->
+    <div class="card">
+      <img src="partner2-logo.png" alt="Partner 2 Logo">
+      <h3>Beauty Atelier</h3>
+      <p>Holiday Glam Partner | Hair & Glow Studio</p>
+      <a href="beauty-atelier-partner.html" target="_blank">View Partner Post</a>
+    </div>
+
+    <!-- CARD EXAMPLE 3 -->
+    <div class="card">
+      <img src="partner3-logo.png" alt="Partner 3 Logo">
+      <h3>Crowned by Zuri</h3>
+      <p>Stylist Partner | Confidence Curator</p>
+      <a href="crowned-by-zuri.html" target="_blank">View Partner Post</a>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Pink Swann Beauty · “Beauty as Ritual. Strategy as Art.”<br>
+    Designed for @beautyoggg Holiday Collaboration Series.
+  </footer>
+</body>
+</html>
