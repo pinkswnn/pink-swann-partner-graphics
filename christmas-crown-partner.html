@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christmas Crown Partner Graphic</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #000;
+      height: 100vh;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .post {
+      width: 1080px;
+      height: 1080px;
+      background: radial-gradient(circle at top, #1b0730, #05020a 60%, #000 100%);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      border-radius: 24px;
+      box-shadow: 0 0 40px rgba(255, 0, 162, 0.4);
+    }
+
+    /* Sparkle overlay */
+    .post::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(circle, rgba(255,255,255,0.8) 1px, transparent 1px),
+        radial-gradient(circle, rgba(255,255,255,0.3) 1px, transparent 1px);
+      background-size: 140px 140px, 220px 220px;
+      background-position: 0 20px, 60px 80px;
+      opacity: 0.4;
+      mix-blend-mode: screen;
+      animation: twinkle 6s linear infinite;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 0.8; }
+    }
+
+    h1 {
+      font-size: 80px;
+      background: linear-gradient(90deg, #FF00A2, #E4C17B);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      font-size: 42px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      color: #ffdc8a;
+    }
+
+    p {
+      font-size: 32px;
+      font-family: 'Inter', sans-serif;
+      margin-bottom: 10px;
+    }
+
+    .highlight {
+      color: #FF00A2;
+      font-weight: 700;
+    }
+
+    .cta {
+      margin-top: 20px;
+      padding: 12px 24px;
+      border: 2px solid #E4C17B;
+      border-radius: 40px;
+      font-size: 28px;
+      background: rgba(0,0,0,0.4);
+      backdrop-filter: blur(4px);
+      color: #E4C17B;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .hosted {
+      position: absolute;
+      bottom: 160px;
+      font-size: 28px;
+      color: #ffdc8a;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .logo-space {
+      position: absolute;
+      bottom: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo-space img {
+      width: 180px;
+      height: auto;
+      border-radius: 12px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .logo-caption {
+      font-size: 24px;
+      font-family: 'Inter', sans-serif;
+      color: #FF00A2;
+      text-transform: lowercase;
+    }
+
+    @media (max-width: 700px) {
+      .post {
+        width: 100vw;
+        height: 100vw;
+      }
+      h1 { font-size: 48px; }
+      h2 { font-size: 28px; }
+      p { font-size: 22px; }
+      .cta { font-size: 20px; }
+      .hosted { font-size: 20px; }
+      .logo-space img { width: 120px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="post">
+    <h2>🎄 Christmas Crown Raffle</h2>
+    <h1>Crown Season</h1>
+    <p>is officially <span class="highlight">on</span> 👑</p>
+    <p>15–25 Winners • $10 Entry</p>
+    <p>Enter via <span class="highlight">@beautyoggg</span> bio</p>
+
+    <div class="cta">Tap to Enter ✨</div>
+
+    <div class="hosted">Hosted by @unikornxpressions</div>
+
+    <!-- Partner Logo Area -->
+    <div class="logo-space">
+      <img src="unikorn-logo.png" alt="Partner Logo">
+      <div class="logo-caption">@unikornxpressions</div>
+    </div>
+  </div>
+</body>
+</html>
