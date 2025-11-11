@@ -1,220 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Christmas Crown Partner Raffle</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: #7a1f1f;
-      background: linear-gradient(160deg, #5e1414 0%, #8b2525 45%, #dcb68e 100%);
-      font-family: "Inter", sans-serif;
-      color: #fff;
-    }
-
-    .post {
-      width: 1080px;
-      height: 1080px;
-      background: #8a1b2e;
-      background: radial-gradient(circle at 70% 40%, #b5374e, #510b16 70%);
-      border-radius: 24px;
-      position: relative;
-      overflow: hidden;
-      padding: 60px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      box-shadow: 0 0 60px rgba(0, 0, 0, 0.45);
-    }
-
-    /* Header */
-    .header {
-      font-family: "Playfair Display", serif;
-      text-align: left;
-    }
-
-    .header h1 {
-      font-size: 86px;
-      line-height: 1;
-      color: #fff;
-      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-    }
-
-    .header h1 span {
-      font-family: "Playfair Display", serif;
-      color: #f4c87a;
-      font-style: italic;
-    }
-
-    .header h2 {
-      font-size: 48px;
-      font-weight: 700;
-      margin-top: 10px;
-      color: #fff;
-      text-transform: uppercase;
-    }
-
-    /* How to enter */
-    .steps {
-      margin-top: 40px;
-      background: rgba(255, 255, 255, 0.1);
-      padding: 24px;
-      border-radius: 20px;
-      max-width: 520px;
-    }
-
-    .steps h3 {
-      color: #f4c87a;
-      font-size: 28px;
-      margin-bottom: 14px;
-      text-transform: uppercase;
-      font-weight: 700;
-    }
-
-    ul {
-      list-style: none;
-      font-size: 22px;
-      line-height: 1.8;
-    }
-
-    li::before {
-      content: "✔️ ";
-      margin-right: 8px;
-      color: #f4c87a;
-    }
-
-    /* Raffle Wheel Section */
-    .raffle {
-      position: absolute;
-      right: 80px;
-      bottom: 200px;
-      text-align: center;
-    }
-
-    .wheel {
-      width: 340px;
-      height: 340px;
-      border-radius: 50%;
-      border: 12px solid #f4c87a;
-      background: conic-gradient(#eacfa5 0deg 60deg, #fff 60deg 120deg, #c6425e 120deg 180deg, #eacfa5 180deg 240deg, #fff 240deg 300deg, #c6425e 300deg 360deg);
-      box-shadow: 0 0 30px rgba(0,0,0,0.3);
-      position: relative;
-      margin: 0 auto;
-    }
-
-    .wheel::after {
-      content: "$220";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-family: "Playfair Display", serif;
-      color: #8a1b2e;
-      font-weight: 700;
-      font-size: 60px;
-      background: #f4c87a;
-      border-radius: 50%;
-      padding: 30px 50px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.4);
-    }
-
-    /* Partner logo replaces Santa */
-    .partner-logo {
-      position: absolute;
-      bottom: 40px;
-      right: 90px;
-      width: 220px;
-      height: 120px;
-      background: #fff;
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 0 20px rgba(0,0,0,0.4);
-      overflow: hidden;
-    }
-
-    .partner-logo img {
-      width: 80%;
-      height: auto;
-      object-fit: contain;
-    }
-
-    /* Footer */
-    .footer {
-      position: absolute;
-      bottom: 40px;
-      left: 60px;
-      color: #fff;
-      font-size: 22px;
-      line-height: 1.4;
-    }
-
-    .footer strong {
-      color: #f4c87a;
-    }
-
-    .footer a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .brand {
-      position: absolute;
-      top: 40px;
-      right: 60px;
-      background: #f4c87a;
-      color: #8a1b2e;
-      padding: 10px 26px;
-      border-radius: 50px;
-      font-weight: 700;
-      text-transform: uppercase;
-      font-size: 20px;
-    }
-
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Crown Raffle - Partner Graphic</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Playfair+Display:wght@700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .raffle-container {
+            width: 1080px;
+            height: 1350px;
+            background: linear-gradient(135deg, #8B1538 0%, #C41E3A 50%, #D81B60 100%);
+            position: relative;
+            overflow: hidden;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        /* Snowflakes background pattern */
+        .raffle-container::before {
+            content: '❄ ❅ ❆ ❄ ❅ ❆ ❄ ❅ ❆ ❄ ❅ ❆ ❄ ❅ ❆ ❄ ❅ ❆ ❄ ❅ ❆ ❄ ❅ ❆';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            font-size: 48px;
+            color: rgba(255, 255, 255, 0.1);
+            line-height: 120px;
+            word-wrap: break-word;
+            z-index: 1;
+        }
+        
+        /* Partner badge */
+        .partner-badge {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            background: #FFD700;
+            color: #8B1538;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 20px;
+            z-index: 10;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        
+        /* Main title */
+        .title-group {
+            position: absolute;
+            top: 60px;
+            left: 60px;
+            z-index: 5;
+        }
+        
+        .title-christmas {
+            font-family: 'Playfair Display', serif;
+            font-size: 90px;
+            color: #FFD700;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            font-style: italic;
+        }
+        
+        .title-raffle {
+            font-size: 140px;
+            font-weight: 900;
+            color: white;
+            line-height: 0.9;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+            margin-top: -10px;
+        }
+        
+        /* How to Enter section */
+        .entry-details {
+            position: absolute;
+            top: 420px;
+            left: 60px;
+            z-index: 5;
+        }
+        
+        .entry-title {
+            font-size: 42px;
+            color: #FFD700;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+        
+        .entry-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 18px;
+            color: white;
+            font-size: 28px;
+            font-weight: 600;
+        }
+        
+        .checkmark {
+            width: 35px;
+            height: 35px;
+            background: white;
+            color: #C41E3A;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            margin-right: 15px;
+            font-weight: 900;
+            flex-shrink: 0;
+        }
+        
+        /* Partner logo area */
+        .logo-container {
+            position: absolute;
+            bottom: 350px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 450px;
+            height: 450px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 8;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.4);
+            border: 8px solid #FFD700;
+        }
+        
+        .logo-placeholder {
+            font-size: 24px;
+            color: #999;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        /* Prize value */
+        .prize-wheel {
+            position: absolute;
+            bottom: 280px;
+            right: 60px;
+            width: 180px;
+            height: 180px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9;
+            box-shadow: 0 6px 30px rgba(0,0,0,0.4);
+            border: 10px solid #FFD700;
+        }
+        
+        .prize-amount {
+            font-size: 72px;
+            font-weight: 900;
+            color: #C41E3A;
+        }
+        
+        /* Decorative coins */
+        .coin {
+            position: absolute;
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+            border-radius: 50%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        
+        .coin-1 {
+            width: 100px;
+            height: 100px;
+            top: 380px;
+            right: 100px;
+            z-index: 7;
+        }
+        
+        .coin-2 {
+            width: 80px;
+            height: 80px;
+            top: 320px;
+            right: 220px;
+            z-index: 6;
+        }
+        
+        /* Special badge */
+        .special-badge {
+            position: absolute;
+            bottom: 480px;
+            left: 80px;
+            background: #FFD700;
+            color: #8B1538;
+            padding: 15px;
+            border-radius: 50%;
+            width: 140px;
+            height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 1.2;
+            z-index: 9;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            transform: rotate(-15deg);
+        }
+        
+        /* Footer info */
+        .footer-info {
+            position: absolute;
+            bottom: 60px;
+            left: 60px;
+            right: 60px;
+            z-index: 5;
+        }
+        
+        .drawing-date {
+            font-size: 36px;
+            color: white;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+        
+        .website-button {
+            background: white;
+            color: #C41E3A;
+            padding: 20px 40px;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            font-weight: 800;
+            font-size: 28px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        
+        .website-button::before {
+            content: '🌐';
+            margin-right: 12px;
+            font-size: 32px;
+        }
+        
+        .website-url {
+            margin-top: 15px;
+            font-size: 32px;
+            color: white;
+            font-weight: 700;
+        }
+        
+        /* Crown decorations */
+        .crown {
+            position: absolute;
+            font-size: 60px;
+            z-index: 4;
+        }
+        
+        .crown-1 {
+            top: 200px;
+            left: 80px;
+            opacity: 0.3;
+        }
+        
+        .crown-2 {
+            top: 600px;
+            right: 120px;
+            opacity: 0.4;
+        }
+    </style>
 </head>
 <body>
-  <div class="post">
-    <div class="brand">Beauty O GGG × Pink Swann</div>
-
-    <div class="header">
-      <h1><span>Christmas</span><br> Crown Raffle</h1>
-      <h2>Partner Contest</h2>
+    <div class="raffle-container">
+        <!-- Partner Badge -->
+        <div class="partner-badge">FOUNDING PARTNER</div>
+        
+        <!-- Main Title -->
+        <div class="title-group">
+            <div class="title-christmas">Christmas</div>
+            <div class="title-raffle">Crown<br>Raffle</div>
+        </div>
+        
+        <!-- How to Enter -->
+        <div class="entry-details">
+            <div class="entry-title">How to Enter:</div>
+            <div class="entry-item">
+                <div class="checkmark">✓</div>
+                <div>Purchase ticket(s) at $10 each</div>
+            </div>
+            <div class="entry-item">
+                <div class="checkmark">✓</div>
+                <div>15-25 winners announced live</div>
+            </div>
+            <div class="entry-item">
+                <div class="checkmark">✓</div>
+                <div>Win luxury hair services</div>
+            </div>
+        </div>
+        
+        <!-- Partner Logo Area -->
+        <img src="unikorn-logo.png" alt="Partner Logo" style="max-width: 380px; max-height: 380px;">
+        </div>
+        
+        <!-- Prize Value -->
+        <div class="prize-wheel">
+            <div class="prize-amount">$220</div>
+        </div>
+        
+        <!-- Decorative Coins -->
+        <div class="coin coin-1"></div>
+        <div class="coin coin-2"></div>
+        
+        <!-- Special Badge -->
+        <div class="special-badge">
+            Win FREE<br>
+            Christmas<br>
+            Hair!
+        </div>
+        
+        <!-- Crown Decorations -->
+        <div class="crown crown-1">👑</div>
+        <div class="crown crown-2">👑</div>
+        
+        <!-- Footer -->
+        <div class="footer-info">
+            <div class="drawing-date">Drawing: December 1, 2025</div>
+            <div class="website-button">Enter Now</div>
+            <div class="website-url">pinkswann.com</div>
+        </div>
     </div>
-
-    <div class="steps">
-      <h3>How to Enter:</h3>
-      <ul>
-        <li>Follow <strong>@beautyoggg</strong> + tag 5 friends</li>
-        <li>Share your favorite holiday hair photo</li>
-        <li>Get crowned — 15–25 luxury winners</li>
-      </ul>
-    </div>
-
-    <div class="raffle">
-      <div class="wheel"></div>
-    </div>
-
-    <div class="partner-logo">
-      <!-- Replace this with your partner’s logo -->
-      <img src="unikorn-logo.png" alt="Partner Logo" />
-    </div>
-
-    <div class="footer">
-      Until <strong>25/12/2025</strong><br>
-      Hosted by <strong>@unikornxpressions</strong><br>
-      Visit <a href="https://www.beautyoggg.com" target="_blank">beautyoggg.com</a>
-    </div>
-  </div>
 </body>
 </html>
-
