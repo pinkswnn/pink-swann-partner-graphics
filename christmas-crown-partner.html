@@ -1,146 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Christmas Crown Partner Post</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-<style>
-  *{margin:0;padding:0;box-sizing:border-box;}
-  body{
-    background:#0b0210;
-    display:flex;align-items:center;justify-content:center;
-    height:100vh;font-family:'Inter',sans-serif;
-  }
-  .frame{
-    width:1080px;height:1080px;
-    background: radial-gradient(circle at top,#1b0730,#05020a 60%,#000);
-    color:#fff;
-    border-radius:32px;
-    position:relative;
-    overflow:hidden;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    box-shadow:0 0 60px rgba(255,0,162,0.35);
-  }
-  /* sparkle overlay */
-  .frame::before{
-    content:"";
-    position:absolute;inset:0;
-    background-image:
-      radial-gradient(circle,rgba(255,255,255,0.7) 1px,transparent 1px),
-      radial-gradient(circle,rgba(255,255,255,0.4) 1px,transparent 1px);
-    background-size:120px 120px,200px 200px;
-    background-position:0 0,40px 60px;
-    opacity:0.4;
-    animation:sparkle 6s ease-in-out infinite alternate;
-  }
-  @keyframes sparkle{from{opacity:.3}to{opacity:.7}}
-  h1{
-    font-family:'Playfair Display',serif;
-    font-size:90px;
-    letter-spacing:2px;
-    background:linear-gradient(90deg,#ff00a2,#e4c17b);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-    margin-bottom:8px;
-  }
-  h2{
-    font-size:42px;
-    color:#ffdc8a;
-    text-transform:uppercase;
-    letter-spacing:2px;
-    margin-bottom:12px;
-  }
-  p{
-    font-size:30px;
-    color:rgba(255,255,255,.9);
-    margin:8px 0;
-  }
-  .cta{
-    margin-top:24px;
-    background:linear-gradient(90deg,#ff00a2,#e4c17b);
-    color:#fff;
-    padding:14px 32px;
-    border-radius:40px;
-    font-weight:600;
-    letter-spacing:1px;
-    font-size:28px;
-    box-shadow:0 0 20px rgba(255,0,162,.4);
-    animation:pulse 3s ease-in-out infinite;
-  }
-  @keyframes pulse{
-    0%,100%{transform:scale(1)}
-    50%{transform:scale(1.05)}
-  }
-  .footer{
-    position:absolute;
-    bottom:80px;
-    text-align:center;
-  }
-  .footer p{
-    font-size:26px;
-    color:#ffdc8a;
-    margin-bottom:12px;
-  }
-  .logo-wrap{
-    background:rgba(0,0,0,.7);
-    border:2px solid rgba(255,255,255,.2);
-    border-radius:18px;
-    padding:14px 22px;
-    display:flex;
-    align-items:center;
-    gap:20px;
-    justify-content:center;
-  }
-  .logo-wrap img{
-    width:160px;
-    height:auto;
-    border-radius:12px;
-    background:#fff;
-    object-fit:contain;
-  }
-  .logo-caption{
-    font-family:'Playfair Display',serif;
-    font-size:28px;
-    color:#ff00a2;
-  }
-  /* floating emojis for motion */
-  .float{position:absolute;font-size:2rem;opacity:.8;animation:float 5s ease-in-out infinite;}
-  .f1{top:10%;left:12%;animation-delay:0s;}
-  .f2{top:20%;right:10%;animation-delay:1s;}
-  .f3{bottom:12%;left:18%;animation-delay:2s;}
-  @keyframes float{
-    0%,100%{transform:translateY(0);}
-    50%{transform:translateY(-10px);}
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christmas Crown Partner Raffle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #7a1f1f;
+      background: linear-gradient(160deg, #5e1414 0%, #8b2525 45%, #dcb68e 100%);
+      font-family: "Inter", sans-serif;
+      color: #fff;
+    }
+
+    .post {
+      width: 1080px;
+      height: 1080px;
+      background: #8a1b2e;
+      background: radial-gradient(circle at 70% 40%, #b5374e, #510b16 70%);
+      border-radius: 24px;
+      position: relative;
+      overflow: hidden;
+      padding: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 0 60px rgba(0, 0, 0, 0.45);
+    }
+
+    /* Header */
+    .header {
+      font-family: "Playfair Display", serif;
+      text-align: left;
+    }
+
+    .header h1 {
+      font-size: 86px;
+      line-height: 1;
+      color: #fff;
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .header h1 span {
+      font-family: "Playfair Display", serif;
+      color: #f4c87a;
+      font-style: italic;
+    }
+
+    .header h2 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-top: 10px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    /* How to enter */
+    .steps {
+      margin-top: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 24px;
+      border-radius: 20px;
+      max-width: 520px;
+    }
+
+    .steps h3 {
+      color: #f4c87a;
+      font-size: 28px;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    ul {
+      list-style: none;
+      font-size: 22px;
+      line-height: 1.8;
+    }
+
+    li::before {
+      content: "✔️ ";
+      margin-right: 8px;
+      color: #f4c87a;
+    }
+
+    /* Raffle Wheel Section */
+    .raffle {
+      position: absolute;
+      right: 80px;
+      bottom: 200px;
+      text-align: center;
+    }
+
+    .wheel {
+      width: 340px;
+      height: 340px;
+      border-radius: 50%;
+      border: 12px solid #f4c87a;
+      background: conic-gradient(#eacfa5 0deg 60deg, #fff 60deg 120deg, #c6425e 120deg 180deg, #eacfa5 180deg 240deg, #fff 240deg 300deg, #c6425e 300deg 360deg);
+      box-shadow: 0 0 30px rgba(0,0,0,0.3);
+      position: relative;
+      margin: 0 auto;
+    }
+
+    .wheel::after {
+      content: "$220";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: "Playfair Display", serif;
+      color: #8a1b2e;
+      font-weight: 700;
+      font-size: 60px;
+      background: #f4c87a;
+      border-radius: 50%;
+      padding: 30px 50px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
+    /* Partner logo replaces Santa */
+    .partner-logo {
+      position: absolute;
+      bottom: 40px;
+      right: 90px;
+      width: 220px;
+      height: 120px;
+      background: #fff;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      overflow: hidden;
+    }
+
+    .partner-logo img {
+      width: 80%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    /* Footer */
+    .footer {
+      position: absolute;
+      bottom: 40px;
+      left: 60px;
+      color: #fff;
+      font-size: 22px;
+      line-height: 1.4;
+    }
+
+    .footer strong {
+      color: #f4c87a;
+    }
+
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .brand {
+      position: absolute;
+      top: 40px;
+      right: 60px;
+      background: #f4c87a;
+      color: #8a1b2e;
+      padding: 10px 26px;
+      border-radius: 50px;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 20px;
+    }
+
+  </style>
 </head>
 <body>
-  <div class="frame">
-    <div class="float f1">✨</div>
-    <div class="float f2">🎄</div>
-    <div class="float f3">👑</div>
+  <div class="post">
+    <div class="brand">Beauty O GGG × Pink Swann</div>
 
-    <h2>Christmas Crown Raffle</h2>
-    <h1>Crown Season</h1>
-    <p>is officially <span style="color:#ff00a2;font-weight:700;">ON</span> ✨</p>
-    <p><strong>15–25 Winners · $10 Entry</strong></p>
-    <p>Enter via <span style="color:#ffdc8a;">@beautyoggg</span></p>
+    <div class="header">
+      <h1><span>Christmas</span><br> Crown Raffle</h1>
+      <h2>Partner Contest</h2>
+    </div>
 
-    <div class="cta">Tap to Enter Now 👑</div>
+    <div class="steps">
+      <h3>How to Enter:</h3>
+      <ul>
+        <li>Follow <strong>@beautyoggg</strong> + tag 5 friends</li>
+        <li>Share your favorite holiday hair photo</li>
+        <li>Get crowned — 15–25 luxury winners</li>
+      </ul>
+    </div>
+
+    <div class="raffle">
+      <div class="wheel"></div>
+    </div>
+
+    <div class="partner-logo">
+      <!-- Replace this with your partner’s logo -->
+      <img src="unikorn-logo.png" alt="Partner Logo" />
+    </div>
 
     <div class="footer">
-      <p>Hosted by @unikornxpressions</p>
-      <div class="logo-wrap">
-        <!-- Replace this image with each partner’s logo -->
-        <img src="unikorn-logo.png" alt="Partner Logo">
-        <div class="logo-caption">@unikornxpressions</div>
-      </div>
+      Until <strong>25/12/2025</strong><br>
+      Hosted by <strong>@unikornxpressions</strong><br>
+      Visit <a href="https://www.beautyoggg.com" target="_blank">beautyoggg.com</a>
     </div>
   </div>
 </body>
 </html>
+
